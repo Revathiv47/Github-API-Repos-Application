@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+
+.user-repo {
+  color: crimson;
+}
+
+.repo-owner-image {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.user-container {
+ background-image: linear-gradient(to right top, #d16ba5, #b47fcb, #8794e3, #4da6e9, #00b3de, #00bed8, #00c8ca, #00d0b5, #00dca9, #1de897, #4df27f, #76fb5f);
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 16px;
+  font-family: Poppins;
+
+  gap: 10px;
+  max-width: 450px;
+  transition: all 200ms;
+}
+
+
+@media (min-width: 400px) {
+  .user-container {
+    display: flex;
+  }
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.fork-count, .star-count {
+  color: white;
+}
+.repo-url{
+  font-size:10px;
+  text-align:left;
+}
+.user-container:hover .user-image {
+  border: 3px solid pink;
+}
+
+.user-container:hover {
+  transform: scale(1.2);
+}
